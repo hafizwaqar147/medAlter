@@ -1,0 +1,39 @@
+<header id="navbar" class="fixed top-0 left-0 right-0 z-30 transition-colors duration-300 bg-white/90 dark:bg-slate-900 backdrop-blur">
+  <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <div class="h-9 w-9 rounded-2xl bg-botanical-gradient shadow-glow-violet flex items-center justify-center animate-gentlePulse">
+        <span class="text-xs font-bold text-medalter-cream">MA</span>
+      </div>
+      <div class="flex flex-col leading-tight">
+        <span class="font-semibold text-slate-900 dark:text-slate-50 text-lg">MedAlter</span>
+        <span class="text-[11px] uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">AI Alternative Medicine</span>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-700 dark:text-slate-300 items-center">
+      <a href="#treatments" class="hover:text-medalter-violet dark:hover:text-medalter-violet">Treatments</a>
+      <a href="#ai-diagnosis" class="hover:text-medalter-violet dark:hover:text-medalter-violet">AI Diagnosis</a>
+      <a href="#herbal-library" class="hover:text-medalter-violet dark:hover:text-medalter-violet">Herbal Library</a>
+      <a href="#about" class="hover:text-medalter-violet dark:hover:text-medalter-violet">About Us</a>
+      <a href="#contact" class="hover:text-medalter-violet dark:hover:text-medalter-violet">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button
+        id="theme-toggle"
+        class="h-10 w-10 rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:scale-110 active:scale-95"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <span id="theme-icon" class="transition-transform duration-300">🌙</span>
+      </button>
+      <button class="hidden md:inline-flex rounded-full bg-slate-900 text-medalter-cream px-4 py-1.5 text-xs font-semibold tracking-wide hover:bg-slate-800 transition-colors dark:bg-slate-700 dark:hover:bg-slate-600">Start AI Diagnosis</button>
+    </div>
+
+    <button class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-full bg-white/80 shadow-md backdrop-blur dark:bg-slate-800/80" aria-label="Open navigation">
+      <span class="block h-[2px] w-4 bg-slate-900 mb-[3px]"></span>
+      <span class="block h-[2px] w-4 bg-slate-900 mb-[3px]"></span>
+      <span class="block h-[2px] w-4 bg-slate-900"></span>
+    </button>
+  </div>
+</header>

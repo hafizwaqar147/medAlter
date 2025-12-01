@@ -1,0 +1,260 @@
+<!-- Hero Section -->
+<main class="pt-24">
+  <section
+    class="section relative overflow-hidden"
+    aria-labelledby="hero-title"
+  >
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-12 items-center">
+      <!-- Left content -->
+      <div class="space-y-6 reveal-on-scroll">
+        <p
+          class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-xs font-semibold text-medalter-teal shadow-sm backdrop-blur"
+        >
+          <span
+            class="inline-block h-2 w-2 rounded-full bg-medalter-violet animate-ping"
+          ></span>
+          AI-powered natural healing intelligence
+        </p>
+
+        <h1
+          id="hero-title"
+          class="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900"
+        >
+          MedAlter —
+          <span class="text-medalter-violet"
+            >AI-Powered Alternative Medicine</span
+          >
+          for Mind &amp; Body Harmony
+        </h1>
+
+        <p class="text-sm md:text-base text-slate-600 max-w-xl">
+          Discover integrative medicine insights, herbal treatments, and
+          energy medicine guidance. Search by salt or chemical name,
+          upload a picture of medicine, and let MedAlter’s AI decode
+          personalized natural therapy options for holistic wellness.
+        </p>
+
+        <!-- Search panel -->
+        <div
+          class="mt-4 rounded-2xl bg-white/80 p-4 shadow-aura-soft backdrop-blur space-y-3"
+        >
+          <p class="text-xs font-semibold text-slate-500 uppercase">
+            Find Alternative Treatments
+          </p>
+
+          <div class="flex flex-col gap-3">
+            <!-- Text search -->
+            <div
+              class="flex items-center gap-2 rounded-full bg-slate-50 px-3 py-1.5 border border-slate-200 focus-within:border-medalter-violet focus-within:ring-2 focus-within:ring-medalter-violet/30 transition-all"
+            >
+              <svg
+                class="h-4 w-4 text-slate-400"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="11" cy="11" r="6"></circle>
+                <line x1="16" y1="16" x2="21" y2="21"></line>
+              </svg>
+              <input
+                id="search-input"
+                type="text"
+                class="w-full bg-transparent text-xs md:text-sm outline-none placeholder:text-slate-400"
+                placeholder="Search natural therapies by salt, chemical name, herb, or holistic treatment..."
+              />
+            </div>
+
+            <!-- Or picture upload -->
+            <div class="flex flex-col md:flex-row gap-2 items-center">
+              <div
+                class="flex-1 flex items-center gap-2 text-[11px] md:text-xs text-slate-500"
+              >
+                <span
+                  class="inline-flex items-center justify-center rounded-full bg-medalter-green/15 text-medalter-teal h-6 w-6 text-[10px] font-semibold"
+                  >OR</span
+                >
+                <span
+                  >Upload a picture of medicine or label and let MedAlter
+                  detect alternative natural options.</span
+                >
+              </div>
+              <label
+                class="inline-flex items-center gap-2 rounded-full border border-dashed border-medalter-teal/60 px-3 py-1.5 text-[11px] md:text-xs font-medium text-medalter-teal cursor-pointer hover:border-medalter-violet hover:text-medalter-violet transition-colors"
+              >
+                <svg
+                  class="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"
+                  />
+                  <path d="M12 4v14" />
+                  <path d="M8 8l4-4 4 4" />
+                </svg>
+                <span>Upload medicine image</span>
+                <input
+                  type="file"
+                  id="image-input"
+                  class="hidden"
+                  accept="image/*"
+                />
+              </label>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-1">
+            <button
+              class="flex-1 min-w-[130px] rounded-full bg-medalter-violet text-medalter-cream text-xs md:text-sm font-semibold py-2 px-4 shadow-glow-violet hover:shadow-aura-soft transition-transform hover:-translate-y-0.5"
+            >
+              Start AI Diagnosis
+            </button>
+            <button
+              class="flex-1 min-w-[130px] rounded-full bg-slate-900 text-medalter-cream text-xs md:text-sm font-semibold py-2 px-4 hover:bg-slate-800 transition-transform hover:-translate-y-0.5"
+            >
+              Explore Remedies
+            </button>
+          </div>
+
+          <p class="text-[11px] text-slate-400">
+            MedAlter analyzes salt composition, herbal patterns, and
+            energy medicine data to suggest safe, integrative alternatives.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right visual -->
+      <div class="relative h-[320px] md:h-[420px] lg:h-[460px]">
+        <!-- Floating leaves / aura elements -->
+        <div
+          class="absolute -top-8 -left-6 h-32 w-32 rounded-full bg-medalter-green/35 blur-3xl animate-floatSlow"
+        ></div>
+        <div
+          class="absolute -bottom-6 -right-4 h-40 w-40 rounded-[40%] bg-medalter-violet/30 blur-3xl animate-floatSlow"
+        ></div>
+
+        <!-- Central card -->
+        <div
+          class="relative h-full w-full rounded-3xl bg-white/90 shadow-aura-soft backdrop-blur-lg overflow-hidden border border-white/60 reveal-on-scroll"
+        >
+          <!-- Neural mesh aura SVG -->
+          <svg
+            class="absolute inset-0 opacity-70"
+            viewBox="0 0 400 400"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient
+                id="auraGradient"
+                x1="0"
+                y1="0"
+                x2="1"
+                y2="1"
+              >
+                <stop offset="0%" stop-color="#7BCFA9" />
+                <stop offset="40%" stop-color="#52A39A" />
+                <stop offset="100%" stop-color="#7A75FF" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M50 200 Q 120 60, 200 120 T 350 200 T 200 320 T 50 200 Z"
+              fill="none"
+              stroke="url(#auraGradient)"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-dasharray="4 6"
+            >
+              <animate
+                attributeName="stroke-dashoffset"
+                from="0"
+                to="-80"
+                dur="9s"
+                repeatCount="indefinite"
+              />
+            </path>
+            <circle
+              cx="200"
+              cy="200"
+              r="95"
+              fill="url(#auraGradient)"
+              opacity="0.12"
+            />
+          </svg>
+
+          <!-- Content inside visual card -->
+          <div class="relative h-full p-5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="inline-flex gap-2 items-center">
+                <div
+                  class="h-7 w-7 rounded-xl bg-medalter-green/30 flex items-center justify-center"
+                >
+                  <span
+                    class="h-2 w-2 rounded-full bg-medalter-violet animate-ping"
+                  ></span>
+                </div>
+                <p class="text-[11px] font-semibold text-slate-600">
+                  Real-time AI alternative medicine mapping
+                </p>
+              </div>
+
+              <div class="grid grid-cols-3 gap-2 text-[11px]">
+                <div
+                  class="rounded-2xl bg-medalter-green/15 p-2 flex flex-col gap-1"
+                >
+                  <span class="font-semibold text-slate-800">Holistic</span>
+                  <span class="text-slate-500">Ayurveda &amp; herbs</span>
+                </div>
+                <div
+                  class="rounded-2xl bg-medalter-violet/10 p-2 flex flex-col gap-1"
+                >
+                  <span class="font-semibold text-slate-800">AI Scan</span>
+                  <span class="text-slate-500"
+                    >Salt, chemicals &amp; patterns</span
+                  >
+                </div>
+                <div
+                  class="rounded-2xl bg-medalter-brown/10 p-2 flex flex-col gap-1"
+                >
+                  <span class="font-semibold text-slate-800">Energy</span>
+                  <span class="text-slate-500">Mind–body balance</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chakra / rings motif -->
+            <div class="flex justify-center">
+              <div class="relative h-36 w-36">
+                <div
+                  class="absolute inset-4 rounded-full border border-medalter-green/40 animate-rotateOrganic"
+                ></div>
+                <div
+                  class="absolute inset-8 rounded-full border border-medalter-violet/40 animate-floatSlow"
+                ></div>
+                <div
+                  class="absolute inset-12 rounded-full bg-gradient-to-tr from-medalter-green via-medalter-cream to-medalter-violet opacity-70 blur-[1px]"
+                ></div>
+                <div
+                  class="absolute inset-[38%] rounded-full bg-slate-900 flex items-center justify-center text-[9px] font-semibold text-medalter-cream animate-shimmerGlow"
+                >
+                  MedAlter
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between text-[11px] text-slate-500"
+            >
+              <span>Herbal intelligence • Energy medicine insights</span>
+              <span class="text-medalter-violet font-semibold"
+                >AI wellness graph</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

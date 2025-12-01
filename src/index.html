@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      MedAlter — AI Alternative Medicine, Herbal Treatments & Holistic Wellness
+    </title>
+    <meta
+      name="description"
+      content="MedAlter is an AI alternative medicine and integrative healing platform for holistic wellness. Search herbal treatments by salt, chemical name, or picture to discover personalized natural therapy and energy medicine insights."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Built Tailwind CSS (output: dist/styles.css) -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-medalter-cream text-slate-900 dark:bg-slate-900 dark:text-slate-50 transition-colors duration-300">
+    <!-- Aura Background -->
+    <div class="fixed inset-0 -z-10 bg-aura-radial opacity-80 pointer-events-none"></div>
+
+    <!-- Components loaded dynamically for easy editing -->
+    <div data-component="navbar"></div>
+
+    <main class="pt-24">
+      <div data-component="hero2"></div>
+      <div data-component="ai-diagnosis"></div>
+      <div data-component="treatments"></div>
+      <div data-component="herbal-library"></div>
+      <div data-component="testimonials"></div>
+      <div data-component="pricing"></div>
+      <div data-component="faq"></div>
+      <div data-component="about"></div>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script>
+      (async function loadComponentsAndApp(){
+        const components = Array.from(document.querySelectorAll('[data-component]'));
+        for (const el of components) {
+          const name = el.getAttribute('data-component');
+          try {
+            const res = await fetch(`./components/${name}.html`);
+            if (!res.ok) throw new Error(res.statusText);
+            el.innerHTML = await res.text();
+          } catch (err) {
+            console.error('Failed to load component', name, err);
+          }
+        }
+
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = './scripts/main.js';
+        document.body.appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
