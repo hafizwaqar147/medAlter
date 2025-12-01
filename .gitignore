@@ -27,3 +27,4 @@ Thumbs.db
 
 # Tailwind cache
 .tailwindcache/
+.vercel
